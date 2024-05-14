@@ -12,7 +12,7 @@
         {% endblock %}
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-lg ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{path('app_home')}}">Carat Project</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
                             Games
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">QCM</a></li>
+                                <li><a class="dropdown-item" href="{{ path('app_qcm') }}">QCM</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">Jeu de Mémoire</a></li>
                             </ul>
