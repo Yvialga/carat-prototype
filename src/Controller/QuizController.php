@@ -5,11 +5,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
-class QcmController extends AbstractController {
+class QuizController extends AbstractController {
 
-    #[Route('/qcm', name: 'app_qcm')]
+    #[Route('/quiz', name: 'app_quiz')]
     public function index(): Response {
 
-        return $this->render('qcm/index.html.twig');
+        return $this->render('quiz/index.html.twig');
     }
 }
